@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online image editor - resize, compress, convert images with multiple measurement units (px, cm, mm, in). Professional quality tools for photographers, designers, and marketers.">
+    <meta name="keywords" content="image editor, photo resizer, compress images, convert image format, online photo editor, image measurement tool, pixel converter, cm to pixels">
+    <meta name="author" content="ImageEditorPro">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imageeditorpro.com/">
+    <meta property="og:title" content="ImageEditorPro - Advanced Online Image Editor with Multiple Units">
+    <meta property="og:description" content="Resize, compress and convert images with pixel, cm, mm, and inch measurements. Free online tool for designers and marketers.">
+    <meta property="og:image" content="https://imageeditorpro.com/images/social-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://imageeditorpro.com/">
+    <meta property="twitter:title" content="ImageEditorPro - Advanced Online Image Editor">
+    <meta property="twitter:description" content="Professional image editing tools with multiple measurement units. Free and easy to use.">
+    <meta property="twitter:image" content="https://imageeditorpro.com/images/social-preview.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://imageeditorpro.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ImageEditorPro",
+      "url": "https://imageeditorpro.com",
+      "description": "Advanced online image editor with multiple measurement units for professional image editing",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <title>ImageEditorPro | Advanced Online Image Editor with Multiple Measurement Units</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <!-- Critical CSS -->
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #4bb543;
+            --danger-color: #d9534f;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Above-the-fold styles continue... */
+    </style>
+    
+    <!-- Deferred CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXX');</script>
+    <!-- End Google Tag Manager -->
+
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="/" class="logo">
+                <i class="fas fa-image" aria-hidden="true"></i>
+                <span>ImageEditorPro</span>
+            </a>
+            <div class="nav-links">
+                <a href="/features" aria-label="Features">Features</a>
+                <a href="/blog" aria-label="Blog">Blog</a>
+                <a href="/pricing" aria-label="Pricing">Pricing</a>
+                <a href="/contact" aria-label="Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Top Ad Unit -->
+        <div class="ad-container" id="top-ad">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-4638615338838977/9701863024"></script>
+            <!-- ImageEditorPro_Top_Leaderboard -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-4638615338838977/9701863024"
+                 data-ad-slot="YOUR_TOP_AD_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <main>
+            <section class="hero">
+                <h1>Advanced Online Image Editor</h1>
+                <p>Resize, compress and convert images with pixel, cm, mm, and inch measurements. Perfect for designers, marketers, and photographers.</p>
+            </section>
+
+            <article class="tool-container" itemscope itemtype="https://schema.org/WebApplication">
+                <meta itemprop="applicationCategory" content="DesignApplication">
+                <meta itemprop="operatingSystem" content="Web">
+                
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-cloud-upload-alt" aria-hidden="true"></i>
+                    <h2>Upload Your Image</h2>
+                    <p>Drag & drop your image here or click to browse</p>
+                    <p>Supports: JPG, PNG, WEBP (Max 5MB)</p>
+                    <button class="btn btn-primary" aria-label="Upload image">Select Image</button>
+                    <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" aria-label="File upload">
+                </div>
+
+                <div class="error-message" id="errorMessage" role="alert"></div>
+
+                <div class="preview-container" id="previewContainer">
+                    <div class="preview-wrapper">
+                        <section class="original-image" aria-labelledby="original-heading">
+                            <h3 id="original-heading" class="visually-hidden">Original Image</h3>
+                            <div class="image-box">
+                                <img id="originalImage" src="" alt="Original uploaded image" loading="lazy">
+                            </div>
+                            <div class="image-info">
+                                <p>Original: <span id="originalSize">0 KB</span> • <span id="originalDimensions">0×0 px</span></p>
+                            </div>
+                        </section>
+                        <section class="processed-image" aria-labelledby="processed-heading">
+                            <h3 id="processed-heading" class="visually-hidden">Processed Image</h3>
+                            <div class="image-box">
+                                <img id="processedImage" src="" alt="Processed image result" loading="lazy">
+                            </div>
+                            <div class="image-info">
+                                <p>Processed: <span id="processedSize">0 KB</span> • <span id="processedDimensions">0×0 px</span></p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="controls">
+                        <section class="control-group" aria-labelledby="resize-heading">
+                            <h4 id="resize-heading"><i class="fas fa-ruler-combined" aria-hidden="true"></i> Resize Image</h4>
+                            
+                            <div class="dpi-control">
+                                <label for="dpi-select">DPI:</label>
+                                <select id="dpi-select" aria-label="Select DPI resolution">
+                                    <option value="72">72 (Web)</option>
+                                    <option value="96" selected>96 (Default)</option>
+                                    <option value="150">150 (Print)</option>
+                                    <option value="300">300 (High Quality Print)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="dimension-controls">
+                                <div class="dimension-input">
+                                    <label for="width-input">Width</label>
+                                    <div class="range-container">
+                                        <input type="range" id="width-range" min="10" max="2000" value="800" step="1" aria-label="Image width slider">
+                                        <input type="number" id="width-input" min="10" max="2000" value="800" aria-label="Image width input">
+                                    </div>
+                                    <div class="unit-controls" id="width-unit-controls" role="group" aria-label="Width measurement units">
+                                        <button class="unit-btn active" data-unit="px" aria-pressed="true">px</button>
+                                        <button class="unit-btn" data-unit="cm" aria-pressed="false">cm</button>
+                                        <button class="unit-btn" data-unit="mm" aria-pressed="false">mm</button>
+                                        <button class="unit-btn" data-unit="in" aria-pressed="false">in</button>
+                                        <button class="unit-btn" data-unit="%" aria-pressed="false">%</button>
+                                    </div>
+                                </div>
+                                <div class="dimension-input">
+                                    <label for="height-input">Height</label>
+                                    <div class="range-container">
+                                        <input type="range" id="height-range" min="10" max="2000" value="600" step="1" aria-label="Image height slider">
+                                        <input type="number" id="height-input" min="10" max="2000" value="600" aria-label="Image height input">
+                                    </div>
+                                    <div class="unit-controls" id="height-unit-controls" role="group" aria-label="Height measurement units">
+                                        <button class="unit-btn active" data-unit="px" aria-pressed="true">px</button>
+                                        <button class="unit-btn" data-unit="cm" aria-pressed="false">cm</button>
+                                        <button class="unit-btn" data-unit="mm" aria-pressed="false">mm</button>
+                                        <button class="unit-btn" data-unit="in" aria-pressed="false">in</button>
+                                        <button class="unit-btn" data-unit="%" aria-pressed="false">%</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 0.5rem;">
+                                <label>
+                                    <input type="checkbox" id="maintain-aspect" checked aria-label="Maintain aspect ratio">
+                                    Maintain aspect ratio
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="control-group" aria-labelledby="compression-heading">
+                            <h4 id="compression-heading"><i class="fas fa-compress-alt" aria-hidden="true"></i> Compression</h4>
+                            <div class="range-container">
+                                <input type="range" id="quality-range" min="10" max="100" value="80" step="1" aria-label="Image quality slider">
+                                <span id="quality-value">80%</span>
+                            </div>
+                        </section>
+
+                        <section class="control-group" aria-labelledby="format-heading">
+                            <h4 id="format-heading"><i class="fas fa-file-export" aria-hidden="true"></i> Output Format</h4>
+                            <select id="output-format" aria-label="Select output format">
+                                <option value="jpeg">JPEG (.jpg)</option>
+                                <option value="png">PNG (.png)</option>
+                                <option value="webp">WebP (.webp)</option>
+                            </select>
+                        </section>
+
+                        <div class="loading" id="loadingIndicator" aria-live="polite" aria-busy="true">
+                            <i class="fas fa-spinner" aria-hidden="true"></i>
+                            <p>Processing your image...</p>
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-primary" id="processBtn" aria-label="Process image">
+                                <i class="fas fa-cog" aria-hidden="true"></i> Process Image
+                            </button>
+                            <button class="btn btn-success" id="downloadBtn" disabled aria-label="Download processed image">
+                                <i class="fas fa-download" aria-hidden="true"></i> Download
+                            </button>
+                            <button class="btn btn-danger" id="resetBtn" aria-label="Reset editor">
+                                <i class="fas fa-redo" aria-hidden="true"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Middle Ad Unit -->
+            <div class="ad-container" id="middle-ad">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-4638615338838977/3807873675"></script>
+                <!-- ImageEditorPro_Middle_Responsive -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-app-pub-4638615338838977/3807873675"
+                     data-ad-slot="YOUR_MIDDLE_AD_SLOT"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
+            <section class="features" aria-labelledby="features-heading">
+                <h2 id="features-heading" class="visually-hidden">Key Features</h2>
+                <div class="feature-card">
+                    <i class="fas fa-ruler-combined" aria-hidden="true"></i>
+                    <h3>Multiple Measurement Units</h3>
+                    <p>Resize images using pixels, centimeters, millimeters, inches, or percentages with precise DPI control.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-compress-alt" aria-hidden="true"></i>
+                    <h3>Smart Compression</h3>
+                    <p>Reduce file size without noticeable quality loss using advanced compression algorithms.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                    <h3>Format Conversion</h3>
+                    <p>Convert between JPG, PNG, and WebP formats to optimize for any use case.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Ad Unit -->
+        <div class="ad-container" id="bottom-ad">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-4638615338838977/5878168080"></script>
+            <!-- ImageEditorPro_Bottom_Leaderboard -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-4638615338838977/5878168080"
+                 data-ad-slot="YOUR_BOTTOM_AD_SLOT"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>ImageEditorPro</h3>
+                <p>The most advanced free online image editor with multiple measurement units for professionals.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="/blog/image-optimization-guide">Image Optimization Guide</a></li>
+                    <li><a href="/blog/dpi-explained">DPI Explained</a></li>
+                    <li><a href="/blog/image-formats-comparison">Image Formats Comparison</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> ImageEditorPro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Deferred JavaScript -->
+    <script>
+        // Current year for footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Load remaining CSS
+        const loadCSS = () => {
+            const style = document.createElement('style');
+            style.textContent = `
+                .visually-hidden {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0, 0, 0, 0);
+                    white-space: nowrap;
+                    border: 0;
+                }
+
+                .ad-container {
+                    background-color: white;
+                    border-radius: var(--border-radius);
+                    padding: 1rem;
+                    margin: 2rem 0;
+                    text-align: center;
+                    box-shadow: var(--box-shadow);
+                    min-height: 90px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .features {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    gap: 2rem;
+                    margin: 3rem 0;
+                }
+
+                .feature-card {
+                    background-color: white;
+                    border-radius: var(--border-radius);
+                    padding: 1.5rem;
+                    box-shadow: var(--box-shadow);
+                    transition: var(--transition);
+                }
+
+                .feature-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                }
+
+                .feature-card i {
+                    font-size: 2rem;
+                    color: var(--primary-color);
+                    margin-bottom: 1rem;
+                }
+
+                .feature-card h3 {
+                    margin-bottom: 0.8rem;
+                    color: var(--dark-color);
+                }
+
+                .feature-card p {
+                    color: #666;
+                }
+
+                footer {
+                    background-color: var(--dark-color);
+                    color: white;
+                    padding: 3rem 2rem;
+                    margin-top: 3rem;
+                }
+
+                .footer-content {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    gap: 2rem;
+                }
+
+                .footer-column h3 {
+                    margin-bottom: 1.5rem;
+                    font-size: 1.2rem;
+                    position: relative;
+                    padding-bottom: 0.5rem;
+                }
+
+                .footer-column h3::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 50px;
+                    height: 2px;
+                    background-color: var(--primary-color);
+                }
+
+                .footer-column ul {
+                    list-style: none;
+                }
+
+                .footer-column ul li {
+                    margin-bottom: 0.8rem;
+                }
+
+                .footer-column ul li a {
+                    color: #ddd;
+                    text-decoration: none;
+                    transition: var(--transition);
+                }
+
+                .footer-column ul li a:hover {
+                    color: var(--primary-color);
+                    padding-left: 5px;
+                }
+
+                .footer-bottom {
+                    text-align: center;
+                    padding-top: 2rem;
+                    margin-top: 2rem;
+                    border-top: 1px solid #444;
+                }
+
+                @media (max-width: 768px) {
+                    .navbar {
+                        padding: 1rem;
+                    }
+
+                    .hero h1 {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                /* Tool functionality CSS */
+                .nav-links {
+                    display: flex;
+                    gap: 1.5rem;
+                }
+
+                .nav-links a {
+                    text-decoration: none;
+                    color: var(--dark-color);
+                    font-weight: 500;
+                    transition: var(--transition);
+                }
+
+                .nav-links a:hover {
+                    color: var(--primary-color);
+                }
+
+                .upload-area h3 {
+                    margin-bottom: 0.5rem;
+                    color: var(--dark-color);
+                }
+
+                .upload-area p {
+                    color: #777;
+                    margin-bottom: 1rem;
+                }
+
+                .upload-area .btn {
+                    background-color: var(--primary-color);
+                    color: white;
+                    border: none;
+                    padding: 0.7rem 1.5rem;
+                    border-radius: var(--border-radius);
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: var(--transition);
+                    display: inline-block;
+                }
+
+                .upload-area .btn:hover {
+                    background-color: var(--secondary-color);
+                    transform: translateY(-2px);
+                }
+
+                .preview-container {
+                    display: none;
+                    margin-top: 2rem;
+                }
+
+                .image-box {
+                    border: 1px solid #eee;
+                    border-radius: var(--border-radius);
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    text-align: center;
+                }
+
+                .image-box img {
+                    max-width: 100%;
+                    max-height: 400px;
+                    object-fit: contain;
+                    border-radius: var(--border-radius);
+                }
+
+                .image-info {
+                    margin-top: 1rem;
+                    font-size: 0.9rem;
+                    color: #555;
+                }
+
+                .controls {
+                    margin-top: 2rem;
+                }
+
+                .control-group {
+                    margin-bottom: 1.5rem;
+                }
+
+                .control-group h4 {
+                    margin-bottom: 0.8rem;
+                    color: var(--dark-color);
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                .dimension-controls {
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                }
+
+                .dimension-input {
+                    flex: 1;
+                    min-width: 200px;
+                }
+
+                .unit-controls {
+                    display: flex;
+                    gap: 0.5rem;
+                    margin-top: 0.5rem;
+                }
+
+                .unit-btn {
+                    flex: 1;
+                    padding: 0.5rem;
+                    border: 1px solid #ddd;
+                    border-radius: var(--border-radius);
+                    background: white;
+                    cursor: pointer;
+                    transition: var(--transition);
+                }
+
+                .unit-btn.active {
+                    background-color: var(--primary-color);
+                    color: white;
+                    border-color: var(--primary-color);
+                }
+
+                .dpi-control {
+                    margin-top: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                .dpi-control label {
+                    margin-bottom: 0;
+                    white-space: nowrap;
+                }
+
+                .range-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                }
+
+                .range-container input[type="range"] {
+                    flex: 1;
+                }
+
+                .range-container span {
+                    min-width: 50px;
+                    text-align: center;
+                    font-weight: 500;
+                }
+
+                .btn-group {
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                    margin-top: 2rem;
+                }
+
+                .btn {
+                    padding: 0.8rem 1.5rem;
+                    border-radius: var(--border-radius);
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: var(--transition);
+                    border: none;
+                    font-size: 1rem;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+
+                .btn-primary {
+                    background-color: var(--primary-color);
+                    color: white;
+                }
+
+                .btn-primary:hover {
+                    background-color: var(--secondary-color);
+                    transform: translateY(-2px);
+                }
+
+                .btn-secondary {
+                    background-color: white;
+                    color: var(--primary-color);
+                    border: 1px solid var(--primary-color);
+                }
+
+                .btn-secondary:hover {
+                    background-color: rgba(67, 97, 238, 0.1);
+                    transform: translateY(-2px);
+                }
+
+                .btn-success {
+                    background-color: var(--success-color);
+                    color: white;
+                }
+
+                .btn-success:hover {
+                    background-color: #3a9a33;
+                    transform: translateY(-2px);
+                }
+
+                .btn-danger {
+                    background-color: var(--danger-color);
+                    color: white;
+                }
+
+                .btn-danger:hover {
+                    background-color: #c9302c;
+                    transform: translateY(-2px);
+                }
+
+                .loading {
+                    display: none;
+                    text-align: center;
+                    margin: 2rem 0;
+                }
+
+                .loading i {
+                    font-size: 2rem;
+                    color: var(--primary-color);
+                    animation: spin 1s linear infinite;
+                }
+
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+
+                .error-message {
+                    color: var(--danger-color);
+                    text-align: center;
+                    margin: 1rem 0;
+                    display: none;
+                }
+
+                @media (max-width: 768px) {
+                    .nav-links {
+                        display: none;
+                        position: absolute;
+                        top: 70px;
+                        left: 0;
+                        right: 0;
+                        background-color: white;
+                        flex-direction: column;
+                        padding: 1rem;
+                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                        border-radius: 0 0 var(--border-radius) var(--border-radius);
+                    }
+
+                    .nav-links.active {
+                        display: flex;
+                    }
+
+                    .mobile-menu-btn {
+                        display: block;
+                    }
+
+                    .preview-wrapper {
+                        flex-direction: column;
+                    }
+
+                    .dimension-controls {
+                        flex-direction: column;
+                    }
+
+                    .dimension-input {
+                        min-width: 100%;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        };
+
+        // Load the CSS after the page loads
+        if (document.readyState === 'complete') {
+            loadCSS();
+        } else {
+            window.addEventListener('load', loadCSS);
+        }
+    </script>
+
+    <!-- Main Application JavaScript -->
+    <script defer>
+        // DOM Elements
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('file-input');
+        const previewContainer = document.getElementById('previewContainer');
+        const originalImage = document.getElementById('originalImage');
+        const processedImage = document.getElementById('processedImage');
+        const originalSize = document.getElementById('originalSize');
+        const processedSize = document.getElementById('processedSize');
+        const originalDimensions = document.getElementById('originalDimensions');
+        const processedDimensions = document.getElementById('processedDimensions');
+        const processBtn = document.getElementById('processBtn');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+        const errorMessage = document.getElementById('errorMessage');
+        const dpiSelect = document.getElementById('dpi-select');
+
+        // Dimension controls
+        const widthRange = document.getElementById('width-range');
+        const heightRange = document.getElementById('height-range');
+        const widthInput = document.getElementById('width-input');
+        const heightInput = document.getElementById('height-input');
+        const maintainAspect = document.getElementById('maintain-aspect');
+        const widthUnitControls = document.getElementById('width-unit-controls');
+        const heightUnitControls = document.getElementById('height-unit-controls');
+
+        // Quality control
+        const qualityRange = document.getElementById('quality-range');
+        const qualityValue = document.getElementById('quality-value');
+
+        // Output format
+        const outputFormat = document.getElementById('output-format');
+
+        // State variables
+        let originalFile = null;
+        let processedBlob = null;
+        let originalWidth = 0;
+        let originalHeight = 0;
+        let aspectRatio = 1;
+        let currentWidthUnit = 'px';
+        let currentHeightUnit = 'px';
+        let dpi = 96;
+
+        // Initialize unit buttons
+        function initUnitButtons() {
+            const unitButtons = document.querySelectorAll('.unit-btn');
+            unitButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const unit = this.getAttribute('data-unit');
+                    const isWidthControl = this.parentElement.id === 'width-unit-controls';
+                    
+                    // Update active button
+                    this.parentElement.querySelectorAll('.unit-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-pressed', 'false');
+                    });
+                    this.classList.add('active');
+                    this.setAttribute('aria-pressed', 'true');
+                    
+                    // Update current unit
+                    if (isWidthControl) {
+                        currentWidthUnit = unit;
+                    } else {
+                        currentHeightUnit = unit;
+                    }
+                    
+                    // Convert values to new unit
+                    updateDimensionValues();
+                });
+            });
+        }
+
+        // Convert between units
+        function convertToPixels(value, unit) {
+            switch (unit) {
+                case 'px': return value;
+                case 'cm': return Math.round(value * dpi / 2.54);
+                case 'mm': return Math.round(value * dpi / 25.4);
+                case 'in': return Math.round(value * dpi);
+                case '%': return Math.round(value * originalWidth / 100);
+                default: return value;
+            }
+        }
+
+        function convertFromPixels(pixels, unit) {
+            switch (unit) {
+                case 'px': return pixels;
+                case 'cm': return (pixels * 2.54 / dpi).toFixed(2);
+                case 'mm': return (pixels * 25.4 / dpi).toFixed(2);
+                case 'in': return (pixels / dpi).toFixed(2);
+                case '%': return Math.round(pixels * 100 / originalWidth);
+                default: return pixels;
+            }
+        }
+
+        // Update dimension values when unit changes
+        function updateDimensionValues() {
+            const widthPx = widthInput.value;
+            const heightPx = heightInput.value;
+            
+            widthInput.value = convertFromPixels(widthPx, currentWidthUnit);
+            heightInput.value = convertFromPixels(heightPx, currentHeightUnit);
+            
+            // Update display values
+            updateDimensionDisplay();
+        }
+
+        // Update dimension display text
+        function updateDimensionDisplay() {
+            const widthPx = convertToPixels(parseFloat(widthInput.value) || 0, currentWidthUnit);
+            const heightPx = convertToPixels(parseFloat(heightInput.value) || 0, currentHeightUnit);
+            
+            processedDimensions.textContent = `${widthPx}×${heightPx} px`;
+        }
+
+        // Event listeners
+        function setupEventListeners() {
+            // Upload area
+            uploadArea.addEventListener('click', () => fileInput.click());
+            uploadArea.addEventListener('dragover', handleDragOver);
+            uploadArea.addEventListener('dragleave', handleDragLeave);
+            uploadArea.addEventListener('drop', handleDrop);
+            fileInput.addEventListener('change', handleFileChange);
+
+            // Dimension controls
+            widthRange.addEventListener('input', updateWidth);
+            heightRange.addEventListener('input', updateHeight);
+            widthInput.addEventListener('input', updateWidth);
+            heightInput.addEventListener('input', updateHeight);
+            maintainAspect.addEventListener('change', checkAspectRatio);
+
+            // Quality control
+            qualityRange.addEventListener('input', () => {
+                qualityValue.textContent = `${qualityRange.value}%`;
+            });
+
+            // DPI selection
+            dpiSelect.addEventListener('change', () => {
+                dpi = parseInt(dpiSelect.value);
+                updateDimensionValues();
+            });
+
+            // Action buttons
+            processBtn.addEventListener('click', processImage);
+            downloadBtn.addEventListener('click', downloadImage);
+            resetBtn.addEventListener('click', resetTool);
+        }
+
+        // Handle file upload
+        function handleFileUpload(file) {
+            errorMessage.style.display = 'none';
+            
+            // Check file type
+            if (!file.type.match('image.*')) {
+                showError('Please select an image file (JPEG, PNG, or WebP).');
+                return;
+            }
+
+            // Check file size (5MB limit)
+            if (file.size > 5 * 1024 * 1024) {
+                showError('File size exceeds 5MB limit. Please choose a smaller image.');
+                return;
+            }
+
+            originalFile = file;
+            
+            // Display original image
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                originalImage.src = e.target.result;
+                processedImage.src = e.target.result;
+                
+                // Get image dimensions
+                const img = new Image();
+                img.onload = function() {
+                    originalWidth = img.width;
+                    originalHeight = img.height;
+                    aspectRatio = originalWidth / originalHeight;
+                    
+                    originalDimensions.textContent = `${originalWidth}×${originalHeight} px`;
+                    updateDimensionDisplay();
+                    
+                    // Set initial dimensions in pixels
+                    widthRange.value = originalWidth;
+                    widthInput.value = originalWidth;
+                    widthRange.max = Math.max(originalWidth * 2, 2000);
+                    
+                    heightRange.value = originalHeight;
+                    heightInput.value = originalHeight;
+                    heightRange.max = Math.max(originalHeight * 2, 2000);
+                    
+                    // Show file size
+                    originalSize.textContent = formatFileSize(file.size);
+                    processedSize.textContent = formatFileSize(file.size);
+                    
+                    // Show preview container
+                    previewContainer.style.display = 'block';
+                    uploadArea.style.display = 'none';
+                };
+                img.onerror = function() {
+                    showError('Error loading image. Please try another file.');
+                };
+                img.src = e.target.result;
+            };
+            reader.onerror = function() {
+                showError('Error reading file. Please try again.');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        // Dimension control handlers
+        function updateWidth() {
+            const value = widthInput.value = widthRange.value = Math.min(
+                parseFloat(widthInput.value) || parseInt(widthRange.value), 
+                2000
+            );
+            
+            if (maintainAspect.checked && aspectRatio) {
+                const heightValue = value / aspectRatio;
+                heightRange.value = heightInput.value = currentHeightUnit === '%' ? 
+                    (heightValue * 100 / originalHeight).toFixed(2) : 
+                    convertFromPixels(heightValue, currentHeightUnit);
+            }
+            
+            updateDimensionDisplay();
+        }
+
+        function updateHeight() {
+            const value = heightInput.value = heightRange.value = Math.min(
+                parseFloat(heightInput.value) || parseInt(heightRange.value), 
+                2000
+            );
+            
+            if (maintainAspect.checked && aspectRatio) {
+                const widthValue = value * aspectRatio;
+                widthRange.value = widthInput.value = currentWidthUnit === '%' ? 
+                    (widthValue * 100 / originalWidth).toFixed(2) : 
+                    convertFromPixels(widthValue, currentWidthUnit);
+            }
+            
+            updateDimensionDisplay();
+        }
+
+        function checkAspectRatio() {
+            if (maintainAspect.checked) {
+                if (widthInput.value && !heightInput.value) {
+                    updateHeight();
+                } else if (heightInput.value && !widthInput.value) {
+                    updateWidth();
+                }
+            }
+        }
+
+        // Drag and drop handlers
+        function handleDragOver(e) {
+            e.preventDefault();
+            uploadArea.style.borderColor = 'var(--primary-color)';
+            uploadArea.style.backgroundColor = 'rgba(67, 97, 238, 0.05)';
+        }
+
+        function handleDragLeave() {
+            uploadArea.style.borderColor = '#ccc';
+            uploadArea.style.backgroundColor = 'transparent';
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#ccc';
+            uploadArea.style.backgroundColor = 'transparent';
+            
+            if (e.dataTransfer.files.length) {
+                handleFileUpload(e.dataTransfer.files[0]);
+            }
+        }
+
+        function handleFileChange() {
+            if (fileInput.files.length) {
+                handleFileUpload(fileInput.files[0]);
+            }
+        }
+
+        // Process image
+        function processImage() {
+            if (!originalFile) {
+                showError('Please upload an image first.');
+                return;
+            }
+
+            loadingIndicator.style.display = 'block';
+            processBtn.disabled = true;
+            downloadBtn.disabled = true;
+            
+            setTimeout(() => {
+                try {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const img = new Image();
+                    
+                    img.onload = function() {
+                        try {
+                            // Convert dimensions to pixels
+                            let targetWidth = convertToPixels(
+                                parseFloat(widthInput.value) || originalWidth, 
+                                currentWidthUnit
+                            );
+                            let targetHeight = convertToPixels(
+                                parseFloat(heightInput.value) || originalHeight, 
+                                currentHeightUnit
+                            );
+                            
+                            // Ensure minimum dimensions
+                            targetWidth = Math.max(10, Math.min(targetWidth, 2000));
+                            targetHeight = Math.max(10, Math.min(targetHeight, 2000));
+                            
+                            canvas.width = targetWidth;
+                            canvas.height = targetHeight;
+                            
+                            // Draw image with new dimensions
+                            ctx.imageSmoothingQuality = 'high';
+                            ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+                            
+                            // Get the processed image
+                            let mimeType = 'image/jpeg';
+                            if (outputFormat.value === 'png') mimeType = 'image/png';
+                            if (outputFormat.value === 'webp') mimeType = 'image/webp';
+                            
+                            const quality = qualityRange.value / 100;
+                            
+                            canvas.toBlob(function(blob) {
+                                if (!blob) {
+                                    showError('Error processing image. Please try again.');
+                                    return;
+                                }
+                                
+                                processedBlob = blob;
+                                processedImage.src = URL.createObjectURL(blob);
+                                processedSize.textContent = formatFileSize(blob.size);
+                                processedDimensions.textContent = `${targetWidth}×${targetHeight} px`;
+                                
+                                downloadBtn.disabled = false;
+                                loadingIndicator.style.display = 'none';
+                                processBtn.disabled = false;
+                            }, mimeType, quality);
+                        } catch (error) {
+                            console.error('Processing error:', error);
+                            showError('Error processing image. Please try again.');
+                            loadingIndicator.style.display = 'none';
+                            processBtn.disabled = false;
+                        }
+                    };
+                    
+                    img.onerror = function() {
+                        showError('Error loading image for processing. Please try again.');
+                        loadingIndicator.style.display = 'none';
+                        processBtn.disabled = false;
+                    };
+                    
+                    img.src = URL.createObjectURL(originalFile);
+                } catch (error) {
+                    console.error('Processing error:', error);
+                    showError('An unexpected error occurred. Please try again.');
+                    loadingIndicator.style.display = 'none';
+                    processBtn.disabled = false;
+                }
+            }, 100);
+        }
+
+        // Download image
+        function downloadImage() {
+            if (!processedBlob) {
+                showError('No processed image available. Please process the image first.');
+                return;
+            }
+            
+            try {
+                const url = URL.createObjectURL(processedBlob);
+                const a = document.createElement('a');
+                a.href = url;
+                
+                // Set download filename
+                const originalName = originalFile.name.split('.')[0];
+                let extension = '.jpg';
+                if (outputFormat.value === 'png') extension = '.png';
+                if (outputFormat.value === 'webp') extension = '.webp';
+                
+                a.download = `${originalName}_edited${extension}`;
+                document.body.appendChild(a);
+                a.click();
+                
+                // Clean up
+                setTimeout(() => {
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                }, 100);
+            } catch (error) {
+                console.error('Download error:', error);
+                showError('Error downloading image. Please try again.');
+            }
+        }
+
+        // Reset tool
+        function resetTool() {
+            fileInput.value = '';
+            originalFile = null;
+            processedBlob = null;
+            originalImage.src = '';
+            processedImage.src = '';
+            originalSize.textContent = '0 KB';
+            processedSize.textContent = '0 KB';
+            originalDimensions.textContent = '0×0 px';
+            processedDimensions.textContent = '0×0 px';
+            previewContainer.style.display = 'none';
+            uploadArea.style.display = 'block';
+            downloadBtn.disabled = true;
+            errorMessage.style.display = 'none';
+            
+            // Reset controls
+            if (originalWidth) {
+                widthRange.value = originalWidth;
+                widthInput.value = originalWidth;
+                heightRange.value = originalHeight;
+                heightInput.value = originalHeight;
+            } else {
+                widthRange.value = 800;
+                widthInput.value = 800;
+                heightRange.value = 600;
+                heightInput.value = 600;
+            }
+            
+            // Reset units
+            document.querySelectorAll('.unit-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
+            });
+            document.querySelector('[data-unit="px"]').classList.add('active');
+            document.querySelector('[data-unit="px"]').setAttribute('aria-pressed', 'true');
+            currentWidthUnit = 'px';
+            currentHeightUnit = 'px';
+            
+            qualityRange.value = 80;
+            qualityValue.textContent = '80%';
+            outputFormat.value = 'jpeg';
+            dpiSelect.value = '96';
+            dpi = 96;
+            
+            loadingIndicator.style.display = 'none';
+            processBtn.disabled = false;
+        }
+
+        // Helper functions
+        function formatFileSize(bytes) {
+            if (!bytes) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        // Initialize
+        function init() {
+            initUnitButtons();
+            setupEventListeners();
+            resetTool();
+        }
+
+        // Start the application when DOM is loaded
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXX');
+    </script>
+</body>
+</html>
